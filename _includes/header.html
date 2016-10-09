@@ -1,0 +1,22 @@
+<header class='c-main-header'>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-xs-12 col-sm-1 text-center'>
+        <a class='c-main-header__nav-link' href='{{ site.baseurl }}/'>
+          {{ site.title }}
+        </a>
+      </div>
+      <div class='col-xs-12 col-sm-10 text-center'>
+        <nav class='c-main-header__nav'>
+          {% for page in site.pages %}
+            {% if page.title %}
+              <a class='c-main-header__nav-link' href='{{ page.url | prepend: site.baseurl }}'>
+                {{ page.title }}
+              </a>
+            {% endif %}
+          {% endfor %}
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>

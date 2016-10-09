@@ -1,0 +1,38 @@
+.c-main-header {
+  @include absolute(top 0 left 0);
+  width: 100%;
+
+  &__nav {
+    display: inline-block;
+  }
+
+  &__nav-link {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    margin: 0 15px;
+    padding: 15px;
+    font-size: $fs-200;
+    font-weight: $fw-light;
+    text-transform: uppercase;
+    color: $c-white-smoke;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      color: $c-white-smoke;
+
+      &::after {
+        width: 100%;
+      }
+    }
+
+    &::after {
+      @include absolute(bottom 0 left 0);
+      @include sizing(0 2px);
+      content: '';
+      background-color: $c-pink-orange;
+      transition: width .3s ease;
+    }
+  }
+}
