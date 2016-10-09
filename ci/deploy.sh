@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-SOURCE_BRANCH="master"
+SOURCE_BRANCH="slave"
 TARGET_BRANCH="master"
 
 REPO=`git config remote.origin.url`
