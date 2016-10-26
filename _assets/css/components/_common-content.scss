@@ -1,13 +1,18 @@
-.c-home-content {
+.c-common-content {
   padding: 30px;
+  color: $c-outer-space;
 
   @media #{$md-up} {
     padding: 60px;
   }
 
+  &__title {
+    font-size: $fs-500;
+    text-align: center;
+  }
+
   &__paragraph {
     text-indent: 20px;
-    color: $c-outer-space;
 
     &:last-child {
       margin-bottom: 0;
