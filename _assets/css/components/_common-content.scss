@@ -6,6 +6,12 @@
     padding: 60px;
   }
 
+  & + & {
+    @media #{$md-up} {
+      padding: 30px;
+    }
+  }
+
   &__title {
     font-size: $fs-500;
     text-align: center;
