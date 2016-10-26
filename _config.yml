@@ -10,9 +10,8 @@ title: Nospoko
 company_name: Nospoko
 email: nospoko@nospoko.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Nospoko offers programming services in the field of non-trivial
+  analytic problems using machine learning and fast fourier transform.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://nospoko.com" # the base hostname & protocol for your site
 
