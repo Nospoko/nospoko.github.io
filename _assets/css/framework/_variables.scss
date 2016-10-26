@@ -14,7 +14,7 @@
 // $gray-light:             lighten($gray-base, 46.7%) !default; // #777
 // $gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
 
-$brand-primary:         $c-allports;
+$brand-primary:         $c-deep-sea-green;
 // $brand-success:         #5cb85c !default;
 // $brand-info:            #5bc0de !default;
 // $brand-warning:         #f0ad4e !default;
@@ -42,8 +42,8 @@ $brand-primary:         $c-allports;
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif:  Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-// $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
+$font-family-sans-serif:  Raleway, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-serif:       Lora, "Times New Roman", Times, serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 // $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
 // $font-family-base:        $font-family-sans-serif !default;

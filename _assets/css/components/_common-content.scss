@@ -1,0 +1,27 @@
+.c-common-content {
+  padding: 30px;
+  color: $c-outer-space;
+
+  @media #{$md-up} {
+    padding: 60px;
+  }
+
+  & + & {
+    @media #{$md-up} {
+      padding: 30px;
+    }
+  }
+
+  &__title {
+    font-size: $fs-500;
+    text-align: center;
+  }
+
+  &__paragraph {
+    text-indent: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

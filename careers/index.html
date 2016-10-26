@@ -4,13 +4,24 @@ title: Careers
 permalink: /careers/
 ---
 <div class='v-careers'>
-  <section class='v-careers__section v-careers__section--first'>
+  <section class='c-common-header'>
+    <div class='c-common-header__content'>
+      <div class='container'>
+        <h1 class='c-common-header__title'>
+          Careers
+        </h1>
+      </div>
+    </div>
+  </section>
+  <section class='c-common-content'>
     <div class='container'>
       <div class='row'>
-        <div class='col-xs-12 col-md-8 col-md-offset-2'>
-          We are always eager to add exceptionally motivated individuals to our team.
-          Candidates must be creative and have strong analytical skills.
-          In return we offer:
+        <div class='col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2'>
+          <p class='c-common-content__paragraph'>
+            We are always eager to add exceptionally motivated individuals to our team.
+            Candidates must be creative and have strong analytical skills.
+            In return we offer:
+          </p>
           <ul class='v-careers__list v-careers__list--perks'>
             {% for perk in site.data.perks %}
               <li>
@@ -22,32 +33,44 @@ permalink: /careers/
       </div>
     </div>
   </section>
-  <section class='v-careers__section v-careers__section--light'>
+  <section class='c-common-content'>
     <div class='container'>
-      <p>
-        Currently we are recruiting for the following positions:
-      </p>
-      <ul class='v-careers__list v-careers__list--positions'>
-        {% for position in site.data.positions %}
-          <li>
-            {{ position.title }}
-          </li>
-        {% endfor %}
-      </ul>
-      <p>
-        If you feel your credentials meet the requirements, please submit your motivation letter and CV along with the statement:
-      </p>
-      <p>
-        <i>
-          Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych dla realizacji procesu rekrutacji, zgodnie z ustawą z dnia 29 sierpnia 1997 roku o ochronie danych osobowych (tekst jedn.: Dz. U. z 2002 r. Nr 101, poz. 926 z późn. zm.)
-        </i>
-      </p>
-      <p>
-        to <a href='mailto:careers@nospoko.com'>careers@nospoko.com</a>.
-      </p>
-      <p>
-        If none of the above positions is suitable for you, but you are still interested in joining Nospoko, please send us an unsolicited application.
-      </p>
+      <div class='row'>
+        <div class='col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2'>
+          <p class='c-common-content__paragraph'>
+            Currently we are recruiting for the following positions:
+          </p>
+          <ul class='v-careers__list v-careers__list--positions'>
+            {% for position in site.data.positions %}
+              <li>
+                {{ position.title }}
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class='c-common-content'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-xs-12'>
+          <p class='c-common-content__paragraph'>
+            If you feel your credentials meet the requirements, please submit your motivation letter and CV along with the statement:
+          </p>
+          <p class='c-common-content__paragraph'>
+            <i>
+              Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych dla realizacji procesu rekrutacji, zgodnie z ustawą z dnia 29 sierpnia 1997 roku o ochronie danych osobowych (tekst jedn.: Dz. U. z 2002 r. Nr 101, poz. 926 z późn. zm.)
+            </i>
+          </p>
+          <p class='c-common-content__paragraph'>
+            to <a href='mailto:careers@nospoko.com'>careers@nospoko.com</a>.
+          </p>
+          <p class='c-common-content__paragraph'>
+            If none of the above positions is suitable for you, but you are still interested in joining Nospoko, please send us an unsolicited application.
+          </p>
+        </div>
+      </div>
     </div>
   </section>
 </div>

@@ -19,8 +19,10 @@
 
 @import 'framework/overrides';
 
+@import 'components/common-content';
+@import 'components/common-header';
 @import 'components/footer';
-@import 'components/lead-text';
+@import 'components/home-header';
 @import 'components/main-header';
 
 @import 'views/about';

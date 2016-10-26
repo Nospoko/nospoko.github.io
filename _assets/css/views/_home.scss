@@ -1,34 +1,3 @@
 .v-home {
   position: relative;
-
-  &::before {
-    @include fixed(top 0 left 0);
-    @include sizing(100%);
-    z-index: -1;
-    content: '';
-    background: linear-gradient(rgba($c-allports, .8), rgba($c-pink-orange, .8)),
-      url(asset_path('img_mountains01.jpg')) no-repeat center;
-    background-size: 100%, cover;
-    will-change: transform;
-  }
-
-  &__title {
-    color: $c-white-smoke;
-  }
-
-  &__subtitle {
-    color: $c-white-smoke;
-  }
-
-  &__section {
-    display: flex;
-    height: 100vh;
-    font-weight: $fw-light;
-    line-height: 1.5;
-    text-align: center;
-    color: $c-white-smoke;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
 }
