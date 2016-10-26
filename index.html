@@ -3,14 +3,33 @@ layout: default
 ---
 
 <div class='v-home'>
-  <section class='v-home__section'>
+  <section class='c-home-header'>
+    <div class='c-home-header__background'>
+    </div>
+    <div class='c-home-header__content'>
+      <div class='container'>
+        <h1 class='c-home-header__title'>
+          {{site.title}}
+        </h1>
+        <p class='c-home-header__subtitle'>
+          Software and Research in Medicine, Physics, Industry and Art
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class='c-home-content'>
     <div class='container'>
-      <h1 class='v-home__title'>
-        {{site.title}}
-      </h1>
-      <p class='c-lead-text v-home__subtitle'>
-        Software and Research in Medicine, Physics, Industry and Art
-      </p>
+      <div class='row'>
+        <div class='col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2'>
+          <p class='c-home-content__paragraph'>
+            Nospoko, founded by a group of Polish scientists, is a premier software company specializing in advanced analytics and machine learning.
+          </p>
+          <p class='c-home-content__paragraph'>
+            The core competences of computer science, mathematics and physics are applied to develop remarkable software solutions in medical informatics, applied scientific computation and industry.
+          </p>
+        </div>
+      </div>
     </div>
   </section>
 </div>

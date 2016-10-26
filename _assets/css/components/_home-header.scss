@@ -1,0 +1,52 @@
+.c-home-header {
+  position: relative;
+
+  &::after {
+    @include absolute(right 0 bottom 0 left 0);
+    display: block;
+    height: $c-home-header-triangles-height;
+    content: '';
+    background: linear-gradient(
+      45deg, $c-white 33.333%,
+      transparent 33.333%, transparent 66.667%,
+      $c-white 66.667%
+      ),linear-gradient(
+        -45deg, $c-white 33.333%,
+        transparent 33.333%, transparent 66.667%,
+        $c-white 66.667%
+      );
+    background-position: 0 (- $c-home-header-triangles-height);
+    background-size: $c-home-header-triangles-height (2 * $c-home-header-triangles-height);
+  }
+
+  &__background {
+    @include sizing(100%);
+    position: absolute;
+    background: linear-gradient(120deg, rgba($c-deep-sea-green, .7) 10%, rgba($c-primrose, .7) 100%),
+      url(asset_path('img_mountains01.jpg')) no-repeat center;
+    background-size: 100%, cover;
+  }
+
+  &__content {
+    position: relative;
+    display: flex;
+    height: 300px;
+    font-weight: $fw-light;
+    text-align: center;
+    text-transform: uppercase;
+    color: $c-white;
+    align-items: center;
+
+    @media #{$md-up} {
+      height: 500px;
+    }
+
+    @media #{$lg-up} {
+      height: 600px;
+    }
+  }
+
+  &__title {
+    font-weight: $fw-light;
+  }
+}
