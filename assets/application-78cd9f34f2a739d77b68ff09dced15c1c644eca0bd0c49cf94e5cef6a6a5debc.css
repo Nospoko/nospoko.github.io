@@ -5741,7 +5741,7 @@ button.close {
     font-size: 20px;
     text-align: center; }
   .c-common-content__paragraph {
-    text-indent: 20px; }
+    text-indent: 0px; }
     .c-common-content__paragraph:last-child {
       margin-bottom: 0; }
 
