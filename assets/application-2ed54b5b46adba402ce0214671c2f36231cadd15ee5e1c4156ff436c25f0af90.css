@@ -5866,7 +5866,7 @@ button.close {
 .v-careers__list {
   margin: 0;
   padding: 0;
-  list-style-type: lower-roman;
+  list-style-type: hebrew;
   list-style-position: inside; }
   .v-careers__list li {
     margin: 15px;
