@@ -1,0 +1,47 @@
+---
+layout: default
+title: Segmentation
+permalink: /segmentation/
+---
+<div class='v-about'>
+  <section class='c-common-header'>
+    <div class='c-common-header__content'>
+      <div class='container'>
+        <h1 class='c-common-header__title'> Mandible segmentation from 3D CT data
+        </h1>
+      </div>
+    </div>
+  </section>
+  <section class='c-common-content'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2'>
+          <p class='c-common-content__paragraph'>
+	  This is the first part
+          </p>
+          <p class='c-common-content__paragraph'>
+	  This is second
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class='c-common-content'>
+    <div class='container'>
+      <div class='row'>
+        <h2 class='c-common-content__title'>
+          Projects we are currently working on
+        </h2>
+        <div class='col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2'>
+          <ul class='v-about__projects-list'>
+            {% for project in site.data.projects %}
+              <li class='v-about__project'>
+                {{ project }}
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
