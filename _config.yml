@@ -6,11 +6,11 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Nospoko
-company_name: Nospoko
-email: nospoko@nospoko.com
+title: EPR
+company_name: EPR Solutions
+email: roszcz@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Nospoko offers programming services in the field of non-trivial
+  EPR offers programming services in the field of non-trivial
   analytic problems using machine learning and fast fourier transform.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://nospoko.com" # the base hostname & protocol for your site
