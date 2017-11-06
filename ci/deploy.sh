@@ -29,7 +29,8 @@ git config user.name "Travis CI"
 git config user.email "$COMMIT_AUTHOR_EMAIL"
 
 # Add cname for the dns something
-echo nospoko.com > CNAME
+# echo nospoko.com > CNAME
+echo epr.solutions > CNAME
 
 # Get the deploy key by using Travis's stored variables to decrypt deploy_key.enc
 ENCRYPTED_KEY_VAR="encrypted_${ENCRYPTION_LABEL}_key"

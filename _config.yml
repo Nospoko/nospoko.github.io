@@ -13,7 +13,7 @@ description: > # this means to ignore newlines until "baseurl:"
   EPR offers programming services in the field of non-trivial
   analytic problems using machine learning and fast fourier transform.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://nospoko.com" # the base hostname & protocol for your site
+url: "http://epr.solutions" # the base hostname & protocol for your site
 
 exclude: [vendor, ci, deploy_key.enc, Gemfile, Gemfile.lock]
 
