@@ -4,10 +4,10 @@
     <title>EPR</title>
     <description>EPR offers programming services in the field of non-trivial analytic problems using machine learning and fast fourier transform.
 </description>
-    <link>http://nospoko.com/</link>
-    <atom:link href="http://nospoko.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 06 Nov 2017 08:47:43 +0000</pubDate>
-    <lastBuildDate>Mon, 06 Nov 2017 08:47:43 +0000</lastBuildDate>
+    <link>http://epr.solutions/</link>
+    <atom:link href="http://epr.solutions/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 06 Nov 2017 08:54:30 +0000</pubDate>
+    <lastBuildDate>Mon, 06 Nov 2017 08:54:30 +0000</lastBuildDate>
     <generator>Jekyll v3.3.0</generator>
     
       <item>
@@ -28,8 +28,8 @@
 
 </description>
         <pubDate>Sat, 06 Aug 2016 13:26:03 +0000</pubDate>
-        <link>http://nospoko.com/jekyll/update/2016/08/06/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://nospoko.com/jekyll/update/2016/08/06/welcome-to-jekyll.html</guid>
+        <link>http://epr.solutions/jekyll/update/2016/08/06/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://epr.solutions/jekyll/update/2016/08/06/welcome-to-jekyll.html</guid>
         
         
         <category>jekyll</category>
