@@ -13,18 +13,22 @@
         body {
             font-family: 'Roboto', sans-serif;
             background-color: black;
-            height: 100%;
+            height: 100vh; /* Use viewport height instead of 100% to occupy full screen height */
+            margin: 0; /* Remove margin to avoid scrolling */
+            overflow: hidden; /* Prevent scrolling */
+            display: flex;
+            flex-direction: column; /* Stack child elements vertically */
+            position: relative; /* This makes sure the absolute positioning of the email is relative to the body */
         }
 
         .container {
             text-align: center;
-            height: 100vh;
-            margin: 0;
+            flex: 1; /* Allow the container to grow and consume available space */
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            color: #C0C0C0; 
+            color: #C0C0C0;
         }
 
         h1 {
@@ -32,11 +36,24 @@
             font-size: 42px;
         }
 
+        #emailContainer {
+            position: absolute;
+            bottom: 0; 
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center; /* Center email text */
+            padding: 10px 0; /* Some spacing around the email for better visibility */
+            background-color: rgba(0, 0, 0, 0.8); /* Optional: Add a slightly transparent black background for better visibility against potential future content */
+        }
+
         #emailContainer p {
-            margin-top: 20px;
+            margin: 0;
             font-size: 13px;
             color: #C0C0C0; /* Silver gray */
-            align-self: flex-end;
+        }
+
+        #gifClicker {
+            cursor: default;
         }
     </style>
 </head>
@@ -57,5 +74,4 @@
         });
     </script>
 </body>
-
 </html>
