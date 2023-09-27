@@ -1,5 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
+    cursor: default;
     background-color: black;
     height: 100vh; /* Use viewport height instead of 100% to occupy full screen height */
     margin: 0; /* Remove margin to avoid scrolling */
@@ -7,6 +8,18 @@ body {
     display: flex;
     flex-direction: column; /* Stack child elements vertically */
     position: relative; /* This makes sure the absolute positioning of the email is relative to the body */
+}
+
+/* This will affect highlighted text across the entire document */
+::selection {
+    background-color: teal; /* Change this to your desired color */
+    color: #C0C0C0;
+}
+
+/* Firefox requires an additional pseudo-element */
+::-moz-selection {
+    background-color: teal; /* Change this to your desired color */
+    color: #C0C0C0;
 }
 
 .container {
