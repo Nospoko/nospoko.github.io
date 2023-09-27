@@ -37,6 +37,8 @@
         }
 
         #emailContainer {
+            opacity: 0;
+            transition: opacity 0.3s ease;
             position: absolute;
             bottom: 0; 
             left: 50%;
@@ -52,6 +54,10 @@
             color: #C0C0C0; /* Silver gray */
         }
 
+        #emailContainer.visible {
+            opacity: 1;  /* Set opacity to 1 (fully visible) when the class is added */
+        }
+
         #gifClicker {
             cursor: default;
         }
@@ -65,12 +71,18 @@
             <img src="assets/double-p.gif" alt="Under Construction">
         </a>
     </div>
-    <div id="emailContainer" style="display: none;">
+    <div id="emailContainer">
         <p>tomasz@algrtm.com</p>
     </div>
     <script>
         document.getElementById('gifClicker').addEventListener('click', function() {
-            document.getElementById('emailContainer').style.display = 'block';
+            var emailContainer = document.getElementById('emailContainer');
+
+            if(emailContainer.classList.contains('visible')) {
+                emailContainer.classList.remove('visible');
+            } else {
+                emailContainer.classList.add('visible');
+            }
         });
     </script>
 </body>
