@@ -1,0 +1,67 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    height: 100vh; /* Use viewport height instead of 100% to occupy full screen height */
+    margin: 0; /* Remove margin to avoid scrolling */
+    overflow: hidden; /* Prevent scrolling */
+    display: flex;
+    flex-direction: column; /* Stack child elements vertically */
+    position: relative; /* This makes sure the absolute positioning of the email is relative to the body */
+}
+
+.container {
+    text-align: center;
+    flex: 1; /* Allow the container to grow and consume available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #C0C0C0;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 42px;
+}
+
+#emailContainer {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    bottom: 0; 
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center; /* Center email text */
+    padding: 10px 0; /* Some spacing around the email for better visibility */
+    background-color: rgba(0, 0, 0, 0.8); /* Optional: Add a slightly transparent black background for better visibility against potential future content */
+}
+
+#emailContainer p {
+    margin: 0;
+    font-size: 13px;
+    color: #C0C0C0; /* Silver gray */
+}
+
+#emailContainer.visible {
+    opacity: 1;  /* Set opacity to 1 (fully visible) when the class is added */
+}
+
+#gifClicker {
+    cursor: default;
+}
+
+#copyMessage {
+    display: none;
+    position: absolute;
+    bottom: 100%; /* This will position it right above the emailContainer */
+    left: 50%;
+    transform: translateX(-50%); /* This centers the message horizontally relative to emailContainer */
+    background: teal;
+    color: #C0C0C0;
+    padding: 5px 5px;
+    border-radius: 5px;
+    margin-bottom: 10px; /* Some space between the message and the emailContainer */
+    transition: opacity 0.5s ease-out;
+    opacity: 0;
+    z-index: 10;
+}

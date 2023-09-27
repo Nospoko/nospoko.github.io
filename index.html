@@ -8,76 +8,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="js/main.js" defer></script>
+
     <title>Under Construction</title>
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: black;
-            height: 100vh; /* Use viewport height instead of 100% to occupy full screen height */
-            margin: 0; /* Remove margin to avoid scrolling */
-            overflow: hidden; /* Prevent scrolling */
-            display: flex;
-            flex-direction: column; /* Stack child elements vertically */
-            position: relative; /* This makes sure the absolute positioning of the email is relative to the body */
-        }
-
-        .container {
-            text-align: center;
-            flex: 1; /* Allow the container to grow and consume available space */
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: #C0C0C0;
-        }
-
-        h1 {
-            margin-bottom: 20px;
-            font-size: 42px;
-        }
-
-        #emailContainer {
-            opacity: 0;
-            transition: opacity 0.3s ease;
-            position: absolute;
-            bottom: 0; 
-            left: 50%;
-            transform: translateX(-50%);
-            text-align: center; /* Center email text */
-            padding: 10px 0; /* Some spacing around the email for better visibility */
-            background-color: rgba(0, 0, 0, 0.8); /* Optional: Add a slightly transparent black background for better visibility against potential future content */
-        }
-
-        #emailContainer p {
-            margin: 0;
-            font-size: 13px;
-            color: #C0C0C0; /* Silver gray */
-        }
-
-        #emailContainer.visible {
-            opacity: 1;  /* Set opacity to 1 (fully visible) when the class is added */
-        }
-
-        #gifClicker {
-            cursor: default;
-        }
-
-        #copyMessage {
-            display: none;
-            position: absolute;
-            bottom: 100%; /* This will position it right above the emailContainer */
-            left: 50%;
-            transform: translateX(-50%); /* This centers the message horizontally relative to emailContainer */
-            background: teal;
-            color: #C0C0C0;
-            padding: 5px 5px;
-            border-radius: 5px;
-            margin-bottom: 10px; /* Some space between the message and the emailContainer */
-            transition: opacity 0.5s ease-out;
-            opacity: 0;
-            z-index: 10;
-        }
-    </style>
 </head>
 
 <body>
@@ -91,49 +25,5 @@
         </div>
         <p>hello@algrtm.com</p>
     </div>
-    <script>
-        var emailContainer = document.getElementById('emailContainer');
-        document.body.addEventListener('click', function(event) {
-            // Check if the clicked element is not the emailContainer or a descendant of it
-            if (!emailContainer.contains(event.target)) {
-                if (emailContainer.classList.contains('visible')) {
-                    emailContainer.classList.remove('visible');
-                } else {
-                    emailContainer.classList.add('visible');
-                }
-            }
-        });
-
-        // Event listener for copying the email to the clipboard when emailContainer is clicked
-        emailContainer.addEventListener('click', function(event) {
-            // Prevent the event from propagating to the body
-            event.stopPropagation();
-
-            // Copy the email to clipboard
-            var emailText = emailContainer.querySelector('p').innerText;
-            var textArea = document.createElement('textarea');
-            textArea.value = emailText;
-            document.body.appendChild(textArea);
-            textArea.select();
-            document.execCommand('copy');
-            document.body.removeChild(textArea);
-
-            // Show copy message
-            var copyMessage = document.getElementById('copyMessage');
-            copyMessage.style.display = 'block';
-            copyMessage.style.opacity = '1';
-            
-            // Hide the message after 2 seconds
-            setTimeout(function() {
-                copyMessage.style.opacity = '0';
-                
-                // Remove it from the layout after the fade-out transition is done
-                setTimeout(function() {
-                    copyMessage.style.display = 'none';
-                }, 500); // This 500ms should match the transition duration in the CSS
-
-            }, 2000); // The message will be visible for 2 seconds
-        });
-    </script>
 </body>
 </html>
